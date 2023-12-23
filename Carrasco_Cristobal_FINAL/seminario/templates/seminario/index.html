@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminario de Gastronomía</title>
+</head>
+<body class="container mt-5">
+    <div class="alert alert-info display-1 text-center">Seminario de Gastronomia</div>
+
+    <table class="table">
+        <thead>
+            <tr>
+    <th> <a href="{% url 'inscrito-form' %}" class="btn btn-primary">Formulario de Inscripción</a> </th>
+   <th> <a href="{% url 'institucion-form' %}" class="btn btn-primary">Formulario de Instituciones</a> </th>
+   <th> <a href="{% url 'inscrito-list' %}" class="btn btn-warning">Listado de Inscritos</a> </th>
+    <th> <a href="{% url 'mis-datos' %}" class="btn btn-info">Mis Datos</a> </th>
+</thead>
+</table>
+</body>
+</html>
